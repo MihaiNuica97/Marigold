@@ -66,10 +66,14 @@
     padding: 16px 16px;
     text-decoration: none;
     /* font sa fie broadway */
-    margin-left: 10px;
-    margin-right: 10px;
-
 }
+.option:not(.first) a {
+    margin-left: 10px;
+}
+.option:not(.last) a {
+    margin-right: 10px;
+}
+
 .option a:hover:not(.active) {
     background-color: rgb(82, 10, 58);
     color: white;
@@ -92,7 +96,7 @@
     margin: 0;
     margin-top: 5px;
     padding: 0;
-    left: 5px;
+    left: 15px;
     width: 100%;
     /* background-color: rgb(82, 10, 58); */
     color: white;
