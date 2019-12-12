@@ -10,26 +10,21 @@ slideshowLoop();
 function slideshowLoop()
 {
     setInterval(()=>{
-        // hide first image and put it at the end of the queue
         let firstImage = $('.slideshow-inner-div:first');
         let newFirstImage = firstImage.next();
+        // bring in next image 
         newFirstImage.removeClass("hidden");
+        // once the animation has ended bring the image underneath to the back of th queue
         setTimeout(()=>{
             firstImage.addClass("hidden");
             $('#slideshow-outer-div').append(firstImage)
         },1000);
-
-
-        // show new first image
-        // let newFirstImage = $('.slideshow-inner-div:first');
-
-
-        }, 3000);
+    }, 3000);
 }
 
 function getSlideshowImages()
 {
-    // 
+    // dynamically takes all images in the source folder and puts them in the slideshow
     let src = "./img/slideshow/";
 
     let imageTitles = [];
