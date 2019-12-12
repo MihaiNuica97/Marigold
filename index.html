@@ -2,8 +2,10 @@
     <head>
         <title>Marigold</title>
         <link rel="stylesheet" href="./css/main-layout.css">
+        <link rel="stylesheet" href="./css/slideshow.css">
         <link href="http://allfont.net/allfont.css?fonts=broadway-normal" rel="stylesheet" type="text/css" />
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
     </head>
 
     <body>
@@ -12,7 +14,9 @@
 
             <div id="topbar-con">
                 <div id="logo">
-                    <img id="logo-img" src="./img/banda site-cropped.jpg">
+                    <a href="./index.html">
+                        <img id="logo-img" src="./img/banda site-cropped.jpg">
+                    </a>
                 </div>
             </div>
 
@@ -51,12 +55,11 @@
 
         <!-- CONTENT -->
         <div id="main-layout">
-            <h3>Main Layout</h3>
-            <h1 id="test-text" >Beauty Salon</h1>
-            
-
+            <!-- SLIDESHOW -->
+            <div id="slideshow-outer-div">
+                <!-- Gets filled dynamically with all images from "./img/slideshow" -->
+            </div>
         </div>
-
-        
+        <script src="./js/slideshow.js" defer></script>
     </body>
 </html>

@@ -1,5 +1,9 @@
+body{
+margin: 0;
+}
+
 #navbar-con{
-    position: fixed;
+    position: relative;
     height: 220px;
     top: 0;
     left: 0;
@@ -7,9 +11,10 @@
     background-color: rgb(82, 10, 58);
     display: grid;
     grid-template-rows: 50% 50%;
+    z-index: 2;
 }
 #main-layout{
-    margin-top: 250px;
+    /* margin-top: 250px; */
 }
 
 /******************************************************** NAVBAR ********************************************************/
