@@ -40,7 +40,7 @@ function getSlideshowImages()
                 if(i==0){
                     innerDiv.removeClass("hidden");
                 }
-                let image = $('<img class="slideshow-img" src='+ imageTitles[i] +'>');
+                let image = $('<img class="slideshow-img" src='+src+ imageTitles[i] +'>');
                 image.appendTo(innerDiv);
                 innerDiv.appendTo($('#slideshow-outer-div'));
             }
