@@ -106,15 +106,30 @@ margin: 0;
     background-color: #4CAF50;
   }
 
+#contact-div{
+    align-self: center;
+}
 
-.social-icon{
-    height: 30px;
-    color: white;
+#account-div{
+    text-align: center;
 }
 
 #account-div  a{
     color: white;
 }
+
+.social-icon{
+
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    
+}
+.social-div a{
+    text-decoration: none;
+}
+
+
 
 
   /******************************************************** SUBOPTIONS BAR ********************************************************/
