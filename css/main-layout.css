@@ -86,7 +86,8 @@ margin: 0;
     padding: 16px 16px;
     text-decoration: none;
     /* font sa fie broadway */
-    font-family: Broadway;
+    font-family: Arial;
+    font-weight: bold;
 }
 .option:not(.first) a {
     margin-left: 10px;
@@ -104,6 +105,16 @@ margin: 0;
 .active {
     background-color: #4CAF50;
   }
+
+
+.social-icon{
+    height: 30px;
+    color: white;
+}
+
+#account-div  a{
+    color: white;
+}
 
 
   /******************************************************** SUBOPTIONS BAR ********************************************************/
