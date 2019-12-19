@@ -1,0 +1,36 @@
+#main-layout{
+    align-self: center;
+}
+#content-div{
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin: 50px;
+    align-items: center;
+}   
+
+#photo-div{
+    /* width: 20%;
+    float: left; */
+}
+
+#profile-photo{
+    border-radius: 130px;
+    width: 100%;
+}
+
+#text-div{
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #520a3a;
+    /* width: 75%; */
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#video-div{
+
+}

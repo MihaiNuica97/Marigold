@@ -1,6 +1,10 @@
 body{
     margin: 0;
     /* background-color: #520a3a; */
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
 }
 
 #navbar-con{
@@ -13,9 +17,11 @@ body{
     display: grid;
     grid-template-rows: 100% 0;
     z-index: 2;
+    align-self: start;
 }
 #main-layout{
     /* margin-top: 250px; */
+    align-self: start;
 }
 
 /******************************************************** NAVBAR ********************************************************/
@@ -111,12 +117,12 @@ body{
 #contact-div{
     align-self: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #account-div{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #account-div  a{
@@ -135,7 +141,7 @@ body{
 }
 .social-icon{
 
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     margin: 10px;
     
@@ -197,18 +203,24 @@ opacity: 1;
     grid-auto-flow: row;
     justify-items: center;
     align-items: center;
+    align-self: end;
 }
 
 .footer-div{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
 #address-div{
     /* align-self: end; */
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 1;
     grid-column: 1 / span 1;
+}
+
+#schedule-div{
+    grid-row: 1 / span 3;
+    grid-column: 2;
 }
 
 .map-div{
@@ -226,8 +238,10 @@ opacity: 1;
 }
 #credits-div{
 grid-row: 3 / span 1;
-grid-column: 1 / span 3;
+grid-column: 1;
 color: white;
 align-self: end;
 font-style: italic;
+padding-right: 10px;
+font-size: 13px;
 }
