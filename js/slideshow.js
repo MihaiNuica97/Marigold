@@ -31,7 +31,6 @@ function getSlideshowImages()
     $.ajax({
         url: src,
         success: function(data){
-            console.log(data);
             $(data).find("a:contains(.jpg)").each(function () {
                 imageTitles.push(this.innerText);
             });
