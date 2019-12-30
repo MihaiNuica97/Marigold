@@ -3,8 +3,7 @@
         <title>Marigold</title>
         <link href="./fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/main-layout.css">
-        <link rel="stylesheet" href="./css/slideshow.css">
-        <link rel="stylesheet" href="./css/homepage.css">
+        <link rel="stylesheet" href="./css/services.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         
     </head>
@@ -85,37 +84,21 @@
 
         <!-- CONTENT -->
         <div id="main-layout">
-            <!-- SLIDESHOW -->
-            <div id="slideshow-outer-div">
-                <!-- Gets filled dynamically with all images from "./img/slideshow" -->
-            </div>
 
-            <div id="action-div" onclick="window.location.href = './index.html'">
-                <span id="action-link">Book Now</span>
-            </div>
+            <div class="services-outer-div hidden">
+                <div class="services-img-div">
+                    <img class="services-img" src="" alt="" srcset="">
+                </div>
 
-            <div id="botsection-con">
+                <div class="services-text-div">
 
-                <div class="botsection-div">
-                    <div class="botsection-img-div">
-                            <img src="./img/sevicii_homepage2.jpg" class="botsection-img" alt="">
-                    </div>
+                </div>
 
-                    <div class="botsection-text-div">
-                        <p>Devino versiunea pe care iti doresti sa o vezi in oglinda. Marigold este aici ca sa iti ofere servicii de cea mai inalta calitate.</p>
-                    </div>
-                </div>    
+                <div class="services-popup-div">
 
-                <div class="botsection-div">
-                    <div class="botsection-img-div second">
-                            <img src="./img/produse_homepage.jpg" class="botsection-img second" alt="">
-                    </div>
-
-                    <div class="botsection-text-div second">
-                        <p>La Marigold se folosec doar produsele unor branduri de top care satisfac asteptarile clientilor</p>
-                    </div>
                 </div>
             </div>
+
         </div>
         
         <div id="footer-outer-div">
@@ -155,7 +138,7 @@
             </div>
 
         </div>
-
-        <script src="./js/slideshow.js" defer></script>
+        <script src="./js/services.js"></script>
+        <script src="./js/getServices.js" defer></script>
     </body>
 </html>

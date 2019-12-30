@@ -1,0 +1,76 @@
+#main-layout{
+    margin-top: 30px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+.services-outer-div{
+    position: relative;
+    border: 0.5px solid lightgrey;
+    border-radius: 10px;
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column: 1;
+    width: 80%
+}
+
+.services-img-div{
+    /* width: 20%; */
+    margin: 5px;
+}
+
+.services-img{
+    border-radius: 1000px;
+    width: 100%;
+}
+
+.services-text-div{
+    align-self: center;
+    justify-self: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.services-popup-div{
+    display: none;
+    position: absolute;
+    background-color: white;    
+    border: 0.5px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    left: 100%;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+}
+.services-outer-div:hover .services-popup-div{
+    display: block;
+}
+
+/*  alternative */
+.services-outer-div.right{
+    grid-column: 2;
+    grid-template-columns: auto 30%;
+}
+
+.right .services-img-div{
+    grid-column: 2;
+    grid-row: 1;
+}
+.right .services-text-div{
+    grid-column: 1;
+    grid-row: 1;
+}
+.right .services-popup-div{
+    left: unset;
+    right: 100%;
+}
