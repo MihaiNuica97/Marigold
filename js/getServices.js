@@ -33,9 +33,9 @@ function generateServices(){
 
 
 
-
         clone.appendTo(pageContent);
         clone.removeClass("hidden");
+
     }
     template.remove();
 }

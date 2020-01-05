@@ -1,5 +1,6 @@
 #main-layout{
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 5vw;
     margin-right: 5vw;
     display: grid;
@@ -43,19 +44,21 @@
 }
 
 .services-popup-div{
-    display: none;
+    width: 0px;
     position: absolute;
     background-color: white;    
-    border: 0.5px solid lightgrey;
     border-radius: 10px;
-    padding: 10px;
     left: calc(100% + 10px);
-    width: 100%;
     z-index: 2;
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.1s ease;
 }
 .services-outer-div:hover .services-popup-div{
-    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid lightgrey;
 }
 
 /*  alternative */
