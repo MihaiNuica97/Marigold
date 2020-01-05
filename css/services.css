@@ -1,7 +1,7 @@
 #main-layout{
     margin-top: 30px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50% 50%;
@@ -13,13 +13,15 @@
 
 .services-outer-div{
     position: relative;
+    justify-self: center;
     border: 0.5px solid lightgrey;
     border-radius: 10px;
     margin: 2px;
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 25% auto;
     grid-column: 1;
-    width: 80%
+    width: 80%;
+    max-width: 350px;
 }
 
 .services-img-div{
@@ -47,7 +49,7 @@
     border: 0.5px solid lightgrey;
     border-radius: 10px;
     padding: 10px;
-    left: 100%;
+    left: calc(100% + 10px);
     width: 100%;
     z-index: 2;
     text-align: center;
@@ -59,7 +61,8 @@
 /*  alternative */
 .services-outer-div.right{
     grid-column: 2;
-    grid-template-columns: auto 30%;
+    grid-template-columns: auto 25%;
+
 }
 
 .right .services-img-div{
@@ -72,5 +75,5 @@
 }
 .right .services-popup-div{
     left: unset;
-    right: 100%;
+    right: calc(100% + 10px);
 }

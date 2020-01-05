@@ -22,5 +22,8 @@ const services = [
             "Tunsoare Par Mediu: 40 Lei",
             "Tunsoare Par Lung: 50 Lei"
         ]
+    },
+    {
+        
     }
 ];
