@@ -11,16 +11,19 @@
 #photo-div{
     /* width: 20%;
     float: left; */
+    max-width: 250px;
+    justify-self: end;
 }
 
 #profile-photo{
-    border-radius: 130px;
+    border-radius: 1000px;
     width: 100%;
 }
 
 #text-div{
     float: left;
     margin-left: 10px;
+    margin-right: 10px;
     padding-left: 10px;
     border-left: 3px solid #520a3a;
     /* width: 75%; */
