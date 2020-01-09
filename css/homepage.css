@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 #action-div{
     background-color: #f2df4a;
     margin: 100px auto;
@@ -8,7 +10,8 @@
     padding-bottom: 20px;
     padding-top: 20px;
     cursor: pointer;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 #action-link{
     text-decoration: none;
@@ -23,6 +26,7 @@
 
 .botsection-div{
     /* height: max-content; */
+    display: -ms-grid;
     display: grid; 
     grid-auto-flow: column;
     margin-bottom: 50px;
@@ -32,7 +36,9 @@
 .botsection-img-div{
     width: 100%;
     max-width: 300px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .botsection-img{
@@ -47,17 +53,22 @@
     font-size: 30px;
     font-style: italic;
     font-weight: bold;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     /* margin-top: auto;
     margin-bottom: auto; */
 }
 
 .botsection-img-div.second{
+    -ms-grid-column: 2;
     grid-column: 2;
 }
 .botsection-text-div.second{
+    -ms-grid-column: 1;
     grid-column: 1;
-    justify-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
     margin-left: 0;
     padding-left: 0;
     border-left: none;
