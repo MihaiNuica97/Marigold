@@ -1,18 +1,27 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 #main-layout{
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 #content-div{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 30% auto;
     grid-template-columns: 30% auto;
     margin: 50px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }   
 
 #photo-div{
     /* width: 20%;
     float: left; */
     /* max-width: 250px; */
-    justify-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
 }
 
 #profile-photo{
@@ -37,5 +46,4 @@
 #video-div{
 
 }
-
 

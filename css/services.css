@@ -1,10 +1,14 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 #page-content{
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 5vw;
     margin-right: 5vw;
+    display: -ms-grid;
     display: grid;
     grid-auto-flow: column;
+    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
 }
 
@@ -14,16 +18,21 @@
 
 .services-outer-div{
     position: relative;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     border: 0.5px solid lightgrey;
     border-radius: 10px;
     margin: 2px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 25% auto;
     grid-template-columns: 25% auto;
+    -ms-grid-column: 1;
     grid-column: 1;
     width: 80%;
     max-width: 350px;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
 .services-img-div{
@@ -37,8 +46,11 @@
 }
 
 .services-text-div{
-    align-self: center;
-    justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
@@ -54,8 +66,11 @@
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+    -webkit-transition: width 0.1s ease;
+    -o-transition: width 0.1s ease;
     transition: width 0.1s ease;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 .services-outer-div:hover .services-popup-div{
     width: 100%;
@@ -65,17 +80,23 @@
 
 /*  alternative */
 .services-outer-div.right{
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-columns: auto 25%;
     grid-template-columns: auto 25%;
 
 }
 
 .right .services-img-div{
+    -ms-grid-column: 2;
     grid-column: 2;
+    -ms-grid-row: 1;
     grid-row: 1;
 }
 .right .services-text-div{
+    -ms-grid-column: 1;
     grid-column: 1;
+    -ms-grid-row: 1;
     grid-row: 1;
 }
 .right .services-popup-div{
@@ -95,7 +116,8 @@
     padding-bottom: 20px;
     padding-top: 20px;
     cursor: pointer;
-    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 #action-link{
     text-decoration: none;
