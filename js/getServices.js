@@ -2,7 +2,7 @@ generateServices();
 
 function generateServices(){
     let template = $(".services-outer-div").first();
-    let pageContent = $("#main-layout");
+    let pageContent = $("#page-content");
     pageContent.attr("style", "grid-template-rows: repeat("+services.length+", auto)")
 
     for(i in services){

@@ -23,16 +23,16 @@
 
 .botsection-div{
     /* height: max-content; */
-    display: inline-block;
+    display: grid; 
+    grid-auto-flow: column;
     margin-bottom: 50px;
 }
 
 
 .botsection-img-div{
-    width: 40%;
-    float: left;
+    width: 100%;
     max-width: 300px;
-
+    align-self: center;
 }
 
 .botsection-img{
@@ -40,7 +40,6 @@
 }
 
 .botsection-text-div{
-    float: left;
     margin-left: 10px;
     padding-left: 10px;
     border-left: 5px solid #520a3a;
@@ -48,15 +47,17 @@
     font-size: 30px;
     font-style: italic;
     font-weight: bold;
-    margin-top: auto;
-    margin-bottom: auto;
+    align-self: center;
+    /* margin-top: auto;
+    margin-bottom: auto; */
 }
 
 .botsection-img-div.second{
-    float: right;
+    grid-column: 2;
 }
 .botsection-text-div.second{
-    float: right;
+    grid-column: 1;
+    justify-self: end;
     margin-left: 0;
     padding-left: 0;
     border-left: none;
