@@ -1,4 +1,4 @@
-#main-layout{
+#page-content{
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 5vw;
@@ -23,6 +23,7 @@
     grid-column: 1;
     width: 80%;
     max-width: 350px;
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
 .services-img-div{
@@ -54,6 +55,7 @@
     overflow: hidden;
     white-space: nowrap;
     transition: width 0.1s ease;
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 .services-outer-div:hover .services-popup-div{
     width: 100%;
@@ -79,4 +81,58 @@
 .right .services-popup-div{
     left: unset;
     right: calc(100% + 10px);
+}
+
+
+
+#action-div{
+    background-color: #f2df4a;
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
+}
+#action-link{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    width: 300px;
+}
+#courses-div{
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+
+#courses-title{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color: #520a3a;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+#courses-div div:not(#courses-title){
+    margin-left: 30%;
+    margin-right: 20%;
+}
+
+.courses-content{
+    /* font-size: 20px; */
+}
+.courses-subtitle{
+    font-weight: bold;
+    font-size: 27px;
+    color: #520a3a;
+
+}
+
+.courses-footer{
+    margin-top: 50px;
 }

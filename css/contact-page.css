@@ -1,0 +1,47 @@
+#courses-div{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    font-style: italic;
+}
+
+
+#courses-title{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color: #520a3a;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+#courses-div div:not(#courses-title){
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.courses-content{
+    /* font-size: 20px; */
+    list-style: none;
+}
+
+.courses-subtitle{
+    font-weight: bold;
+    font-size: 27px;
+    color: #520a3a;
+    margin-bottom: 20px;
+}
+
+/* .courses-subtitle > li::before{
+
+    width: 10px;
+    height: 10px;
+} */
+
+.courses-footer{
+    margin-top: 50px;
+}
+#map-div{
+    margin-top: 50px;
+    height: 500px;
+}

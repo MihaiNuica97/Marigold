@@ -3,7 +3,7 @@
 }
 #content-div{
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 30% auto;
     margin: 50px;
     align-items: center;
 }   
@@ -11,12 +11,12 @@
 #photo-div{
     /* width: 20%;
     float: left; */
-    max-width: 250px;
+    /* max-width: 250px; */
     justify-self: end;
 }
 
 #profile-photo{
-    border-radius: 1000px;
+    /* border-radius: 1000px; */
     width: 100%;
 }
 
@@ -37,3 +37,5 @@
 #video-div{
 
 }
+
+
