@@ -10,40 +10,17 @@ function startSlideshow(){
 function slideshowLoop()
 {
     setInterval(()=>{
-        let firstImage = $('.slideshow-inner-div:first');
-        let newFirstImage = firstImage.next();
-        // bring in next image 
-        newFirstImage.removeClass("hidden");
+        let left = $('.slideshow-inner-div:first');
+        let mid = left.next();
+        
+        mid.removeClass("right");
+        left.addClass("left");
         // once the animation has ended bring the image underneath to the back of th queue
         setTimeout(()=>{
-            firstImage.addClass("hidden");
-            $('#slideshow-outer-div').append(firstImage)
+            left.addClass("right");
+            left.removeClass("left");
+            $('#slideshow-outer-div').append(left)
         },1000);
     }, 3000);
 }
 
-function getSlideshowImages()
-{
-    // dynamically takes all images in the source folder and puts them in the slideshow
-    let src = "img/slideshow/";
-
-    let imageTitles = [];
-    $.ajax({
-        url: src,
-        success: function(data){
-            $(data).find("a:contains(.jpg)").each(function () {
-                let filename = this.href.replace(window.location.host, "").replace("http://", "");
-                imageTitles.push(filename);
-            });
-            for(let i in imageTitles){
-                let innerDiv = $('<div class="slideshow-inner-div hidden"> </div>');
-                if(i==0){
-                    innerDiv.removeClass("hidden");
-                }
-                let image = $('<img class="slideshow-img" src='+ imageTitles[i] +'>');
-                image.appendTo(innerDiv);
-                innerDiv.appendTo($('#slideshow-outer-div'));
-            }
-        }
-    });
-}
