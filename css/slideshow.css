@@ -32,6 +32,10 @@
     width: 65%;
     margin-left: 17.5%;
     margin-top: 50px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     height: 46vw;
+}
+
+#main-layout{
+    overflow-x: hidden;
 }

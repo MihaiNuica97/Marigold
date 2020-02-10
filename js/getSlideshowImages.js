@@ -16,11 +16,6 @@ function getSlideshowImages()
                 if(i==0){
                     // left img
                     innerDiv.removeClass("right");
-                    innerDiv.addClass("left");
-                }
-                if(i==1){
-                    // mid img
-                    innerDiv.removeClass("right");
                 }
                 let image = $('<img class="slideshow-img" src='+ imageTitles[i] +'>');
                 image.appendTo(innerDiv);
