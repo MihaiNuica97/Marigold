@@ -112,6 +112,8 @@ body{
     /* font sa fie broadway */
     font-family: Arial;
     font-weight: bold;
+    transition: background-color 200ms linear;
+    transition: color 200ms linear;
 }
 .option:not(.first) a {
     margin-left: 10px;
@@ -162,8 +164,17 @@ body{
     font-size: 25px;
     color: white;
     margin: 10px;
-    
+    padding: 5px;
+    border-radius: 15px;
+    transition: background-color 200ms linear;
+    transition: color 200ms linear;
 }
+
+.social-icon:hover{
+    color: #520a3a;
+    background-color: white;
+}
+
 .social-div a{
     text-decoration: none;
 }
@@ -210,6 +221,8 @@ opacity: 1;
     border-radius: 25px;
     -webkit-box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
             box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
+    transition: background-color 200ms linear;
+    transition: color 200ms linear;
 }
 .suboption:hover:not(.active) {
     background-color: rgb(181, 127, 167);
