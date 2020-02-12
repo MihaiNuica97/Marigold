@@ -29,13 +29,13 @@
     display: -ms-grid;
     display: grid; 
     grid-auto-flow: column;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 
 .botsection-img-div{
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
