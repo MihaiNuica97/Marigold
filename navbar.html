@@ -1,4 +1,8 @@
+<div id="burger-menu" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+</div>
 <div id="topbar-con">
+
     <div id="logo">
         <a href="./index.html">
             <img id="logo-img" src="./img/banda site-cropped.jpg">
@@ -64,3 +68,13 @@
     </ul>
 
 </div>
+<script lang="JavaScript">
+    let menuOpen = false;
+    function toggleMenu(){
+        $('#burger-menu').toggleClass('open');
+        $('#optionbar-con').toggleClass('open');
+        menuOpen = !menuOpen;
+        console.log(menuOpen);
+    }
+
+</script>
