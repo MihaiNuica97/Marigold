@@ -25,6 +25,7 @@ body{
     z-index: 2;
     -ms-grid-row-align: start;
         align-self: start;
+    
 }
 #main-layout{
     /* margin-top: 250px; */
@@ -34,7 +35,9 @@ body{
 }
 
 /******************************************************** NAVBAR ********************************************************/
-
+#burger-menu{
+    display: none;
+}
 #topbar-con{
     display: -ms-grid;
     display: grid;
@@ -330,15 +333,83 @@ opacity: 1;
     grid-column: 1 / span 1;
 }
 #credits-div{
--ms-grid-row: 3;
--ms-grid-row-span: 1;
-grid-row: 3 / span 1;
--ms-grid-column: 1;
-grid-column: 1;
-color: white;
--ms-grid-row-align: end;
-    align-self: end;
-font-style: italic;
-padding-right: 10px;
-font-size: 13px;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    color: white;
+    -ms-grid-row-align: end;
+        align-self: end;
+    font-style: italic;
+    padding-right: 10px;
+    font-size: 13px;
 }
+
+
+  /******************************************************** MOBILE VIEW ********************************************************/
+
+@media screen and (max-width: 992px){
+      
+
+    /******************************************************** TOPBAR ********************************************************/
+    body{
+        overflow-x: hidden;
+    }
+    #topbar-con{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    #logo{
+
+    }
+    #navbar-text-div{
+        display: none;
+    }
+    #contact-div{
+        display: none;
+    }
+    #optionbar-con{
+        all: unset;
+    }
+    #navbar-con{
+        position: relative;
+        /* overflow: hidden; */
+        max-height: 220px;
+    }
+
+    
+
+    /******************************************************** MOBILE MENU ********************************************************/
+
+
+    #burger-menu{
+        z-index: 3;
+        display: block;
+        position: absolute;
+        margin: 20px;
+        right: 0;
+    }
+    #burger-menu > i{
+        color: white;
+        font-size: 40px;
+        transition: all 200ms linear;
+    }
+    #burger-menu.open > i{
+        transform: rotate(-90deg);
+        color: black;
+    }
+    #optionbar-con{
+        position: absolute;
+        z-index: 2;
+        transition: all 200ms linear;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        right: -100vw;
+    }
+
+    #optionbar-con.open{
+        right: 0;
+    }
+  }
