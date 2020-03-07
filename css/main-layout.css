@@ -10,6 +10,7 @@ body{
     -ms-grid-rows: auto 1fr auto;
     grid-template-rows: auto 1fr auto;
     min-width: fit-content;
+    font-size: 15px;
 }
 
 #navbar-con{
@@ -29,6 +30,8 @@ body{
     
 }
 #main-layout{
+    display: flex;
+    flex-direction: column;
     /* margin-top: 250px; */
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
