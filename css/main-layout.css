@@ -1,6 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 body{
+    position: relative;
     margin: 0;
     /* background-color: #520a3a; */
     min-height: 100vh;
@@ -345,6 +346,9 @@ opacity: 1;
     padding-right: 10px;
     font-size: 13px;
 }
+    #mobile-con{
+        display: none;
+    }
 
 
   /******************************************************** MOBILE VIEW ********************************************************/
@@ -355,6 +359,7 @@ opacity: 1;
     /******************************************************** TOPBAR ********************************************************/
     body{
         overflow-x: hidden;
+        overflow-y: scroll;
     }
     #topbar-con{
         grid-template-columns: auto;
@@ -381,10 +386,14 @@ opacity: 1;
     
 
     /******************************************************** MOBILE MENU ********************************************************/
-
+    #mobile-con{
+        display: initial;
+        width: 100%;
+        height: 100%;
+    }
 
     #burger-menu{
-        z-index: 3;
+        z-index: 4;
         display: block;
         position: absolute;
         margin: 20px;
@@ -392,6 +401,8 @@ opacity: 1;
     }
     #burger-menu > i{
         color: white;
+
+        mix-blend-mode: difference;
         font-size: 40px;
         transition: all 200ms linear;
     }
@@ -399,17 +410,30 @@ opacity: 1;
         transform: rotate(-90deg);
         color: black;
     }
+    #burger-menu.open{
+        position: fixed;
+    }
     #optionbar-con{
-        position: absolute;
-        z-index: 2;
-        transition: all 200ms linear;
-        background-color: white;
-        width: 100vw;
-        height: 100vh;
-        right: -100vw;
+        display: none;
+
     }
 
-    #optionbar-con.open{
+    /* #optionbar-con.open{
         right: 0;
+    } */
+    #mobile-con > #optionbar-con{
+        display: block;
+        width: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 3;
+        background-color: white;
+        overflow: hidden;
+        right: 0;
+        transition: all 200ms linear;
+    }
+
+    #mobile-con > #optionbar-con.open{
+        width: 100%;
     }
   }
