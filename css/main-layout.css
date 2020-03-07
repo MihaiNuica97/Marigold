@@ -401,14 +401,13 @@ opacity: 1;
     }
     #burger-menu > i{
         color: white;
-
         mix-blend-mode: difference;
         font-size: 40px;
         transition: all 200ms linear;
     }
     #burger-menu.open > i{
         transform: rotate(-90deg);
-        color: black;
+        /* color: black; */
     }
     #burger-menu.open{
         position: fixed;
@@ -427,13 +426,27 @@ opacity: 1;
         height: 100%;
         position: fixed;
         z-index: 3;
-        background-color: white;
+        background-color: #520a3a;
         overflow: hidden;
         right: 0;
         transition: all 200ms linear;
+        
     }
 
     #mobile-con > #optionbar-con.open{
         width: 100%;
+    }
+
+    #options-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .option{
+    }
+
+    .option > a{
+        color: white;
     }
   }
