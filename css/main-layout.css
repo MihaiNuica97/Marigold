@@ -9,7 +9,7 @@ body{
     display: grid;
     -ms-grid-rows: auto 1fr auto;
     grid-template-rows: auto 1fr auto;
-
+    min-width: fit-content;
 }
 
 #navbar-con{
