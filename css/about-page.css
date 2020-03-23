@@ -44,6 +44,28 @@
 }
 
 #video-div{
-
+    display: none;
 }
 
+@media screen and (max-width: 992px){
+    #content-div{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #photo-div{
+        max-width: 400px;
+    }
+    #text-div{
+        border: none;
+        text-align: center;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+
+
+
+}
