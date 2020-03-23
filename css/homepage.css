@@ -83,9 +83,27 @@
 
 @media screen and (max-width: 992px){
     #botsection-con{
+        display: flex;
+        flex-direction: column;
         margin: 0;
-
+        align-self: flex-end;
+        width: 100%;
     }
+    .botsection-div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .botsection-img-div{
+        margin-bottom: 10px;
+    }
+    .botsection-text-div, .botsection-text-div.second{
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
 
 
 }
