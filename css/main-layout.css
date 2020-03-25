@@ -451,6 +451,7 @@ opacity: 1;
 
     .option > a{
         color: white;
+        text-decoration: none;
     }
     #address-div, #schedule-div, .map-div, #credits-div{
         display: none;
