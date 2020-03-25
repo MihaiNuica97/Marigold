@@ -103,6 +103,13 @@
         padding: 0;
         text-align: center;
     }
+    #action-div{
+        width: 70%;
+        max-width: 400px;
+    }
+    #action-link{
+        font-size: 25px;
+    }
 
 
 
