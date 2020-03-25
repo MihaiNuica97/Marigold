@@ -496,10 +496,22 @@ opacity: 1;
     }
 
     .option > a{
-        color: white !important;
         text-decoration: none;
         -webkit-text-decoration-color: white !important;
                 text-decoration-color: white !important;
+        color: white !important;
+    }
+    .option > a:not(:visited){
+        text-decoration: none;
+        -webkit-text-decoration-color: white !important;
+                text-decoration-color: white !important;
+        color: white !important;
+    }
+    .option > a:link{
+        text-decoration: none;
+        -webkit-text-decoration-color: white !important;
+                text-decoration-color: white !important;
+        color: white !important;
     }
     #address-div, #schedule-div, .map-div, #credits-div{
         display: none;
