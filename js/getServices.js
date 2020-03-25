@@ -32,7 +32,12 @@ function generateServices(){
         }
 
         clone.attr('onClick', 'openPopup($(this))')
-
+        let popupOuter =  clone.find(".popup-outer-div");
+        popupOuter.on('click', function(event){
+            //stop the event bubbling up to the parent
+            event.stopPropagation();
+          });
+        popupOuter.attr('onClick', 'closePopup($(this))');
 
         clone.appendTo(pageContent);
         clone.removeClass("hidden");

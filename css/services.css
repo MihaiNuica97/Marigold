@@ -185,7 +185,55 @@
     .popup-outer-div{
         display: none;
     }
+    .popup-outer-div.open{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: unset;
+        display: block;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
 
+    }
+    .popup-bg{
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+    .services-popup-inner-div{
+        position: fixed;
+        top: 0;
+        z-index: 11;
+        left: 0;
+        right: 0 !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        width: 70% !important;
+        white-space: normal;
+        max-width: 350px;
+    }
+    body.popup-open{
+        overflow: hidden;
+        position: fixed;
+    }
+    .services-text-div{
+        font-size: 20px;
+    }
+    #action-div{
+        width: 70%;
+        max-width: 400px;
+
+    }
+    #action-link{
+        font-size: 25px;
+    }
+    #courses-div div:not(#courses-title) {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
 
 
