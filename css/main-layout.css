@@ -450,7 +450,7 @@ opacity: 1;
     }
 
     .option > a{
-        color: white;
+        color: white !important;
         text-decoration: none;
     }
     #address-div, #schedule-div, .map-div, #credits-div{
