@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 body{
@@ -9,6 +11,8 @@ body{
     display: grid;
     -ms-grid-rows: auto 1fr auto;
     grid-template-rows: auto 1fr auto;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
     min-width: fit-content;
     font-size: 15px;
 }
@@ -30,8 +34,13 @@ body{
     
 }
 #main-layout{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* margin-top: 250px; */
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
@@ -119,7 +128,11 @@ body{
     /* font sa fie broadway */
     font-family: Arial;
     font-weight: bold;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
     transition: color 200ms linear;
 }
 .option:not(.first) a {
@@ -173,7 +186,11 @@ body{
     margin: 10px;
     padding: 5px;
     border-radius: 15px;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
     transition: color 200ms linear;
 }
 
@@ -228,7 +245,11 @@ opacity: 1;
     border-radius: 25px;
     -webkit-box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
             box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.35);
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
     transition: color 200ms linear;
 }
 .suboption:hover:not(.active) {
@@ -365,8 +386,18 @@ opacity: 1;
         overflow-y: scroll;
     }
     #topbar-con{
+        -ms-grid-columns: auto;
         grid-template-columns: auto;
+        -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
+    }
+    #topbar-con > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #topbar-con > *:nth-child(2){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
     }
     #logo{
 
@@ -406,10 +437,14 @@ opacity: 1;
         color: white;
         mix-blend-mode: difference;
         font-size: 40px;
+        -webkit-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
         transition: all 200ms linear;
     }
     #burger-menu.open > i{
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
         /* color: black; */
     }
     #burger-menu.open{
@@ -432,6 +467,8 @@ opacity: 1;
         background-color: #520a3a;
         overflow: hidden;
         right: 0;
+        -webkit-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
         transition: all 200ms linear;
         
     }
@@ -441,10 +478,19 @@ opacity: 1;
     }
 
     #options-list{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .option{
     }
@@ -452,12 +498,18 @@ opacity: 1;
     .option > a{
         color: white !important;
         text-decoration: none;
+        -webkit-text-decoration-color: white !important;
+                text-decoration-color: white !important;
     }
     #address-div, #schedule-div, .map-div, #credits-div{
         display: none;
     }
     #footer-outer-div .social-div{
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
         grid-row: 1 / span 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
         grid-column: 1 / span 3;
         margin: 25px;
     }
