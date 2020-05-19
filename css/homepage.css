@@ -1,9 +1,13 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 #action-div{
     background-color: #f2df4a;
     margin: 100px auto;
-    width: 400px;
+    width: 50%;
+    min-width: 250px;
+    max-width: 400px;
     text-align: center;
     border-radius: 40px;
     padding: 10px;
@@ -16,12 +20,15 @@
 #action-link{
     text-decoration: none;
     color: black;
-    font-size: 40px;
+    font-size: 2em;
     width: 300px;
 }
 #botsection-con{
     margin: 10px auto;
     width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .botsection-div{
@@ -50,7 +57,7 @@
     padding-left: 10px;
     border-left: 5px solid #520a3a;
     width: 50%;
-    font-size: 30px;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: bold;
     -ms-flex-item-align: center;
@@ -76,4 +83,49 @@
     padding-right: 10px;
     border-right: 5px solid #520a3a;
     text-align: right;
+}
+
+@media screen and (max-width: 992px){
+    #botsection-con{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        width: 100%;
+    }
+    .botsection-div{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .botsection-img-div{
+        margin-bottom: 10px;
+    }
+    .botsection-text-div, .botsection-text-div.second{
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #action-div{
+        width: 70%;
+        max-width: 400px;
+    }
+    #action-link{
+        font-size: 25px;
+    }
+
+
+
 }

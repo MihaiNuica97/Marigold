@@ -1,16 +1,17 @@
 function getSlideshowImages()
 {
     // dynamically takes all images in the source folder and puts them in the slideshow
-    let src = "img/slideshow/";
+    let src = "getSlideshow.php";
 
     let imageTitles = [];
-    $.ajax({
+    $.get({
         url: src,
         success: function(data){
-            $(data).find("a:contains(.jpg)").each(function () {
-                let filename = this.href.replace(window.location.host, "").replace("http://", "");
-                imageTitles.push(filename);
-            });
+            let obj = JSON.parse(data);
+            for(let elem in obj){
+                console.log(obj[elem]);
+                imageTitles.push("./img/slideshow/"+obj[elem]);
+            }
             for(let i in imageTitles){
                 let innerDiv = $('<div class="slideshow-inner-div right"> </div>');
                 if(i==0){

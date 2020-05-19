@@ -25,13 +25,19 @@ function generateServices(){
         clone.find(".services-text-div").html("<p>" + service.text +"</p>");
 
         // set popup  text
-        let popupCon = clone.find(".services-popup-div");
+        let popupCon = clone.find(".services-popup-inner-div");
         for(j in service.popup){
             let item = $("<p>" + service.popup[j] + "</p>");
             popupCon.append(item);
         }
 
-
+        clone.attr('onClick', 'openPopup($(this))')
+        let popupOuter =  clone.find(".popup-outer-div");
+        popupOuter.on('click', function(event){
+            //stop the event bubbling up to the parent
+            event.stopPropagation();
+          });
+        popupOuter.attr('onClick', 'closePopup($(this))');
 
         clone.appendTo(pageContent);
         clone.removeClass("hidden");

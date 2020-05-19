@@ -1,0 +1,37 @@
+    <div id="burger-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div id="optionbar-con">
+
+        <ul id="options-list">
+            <li class="option first"><div onclick='window.location.href = "./index.html"'>Acasa</div></li>
+    
+
+            <li class="option"><div onclick='window.location.href = "./about.html"'>Despre Mine</div>
+            </li>
+            
+            <li class="option"><div onclick='window.location.href = "./services.html"'>Preturi</div>
+            </li>
+
+            <li class="option"><div onclick='window.location.href = "./offers.html"'>Oferte</div>
+            </li>
+
+            <li class="option"><div onclick='window.location.href = "https://edubeautymarigoldblog.wordpress.com/"'>Blog</div></li>
+            
+            <li class="option"><div onclick='window.location.href = "./contact.html"'>Contact</div></li>
+            
+            <li class="option last"><div onclick='window.location.href = "https://www.facebook.com/marigold.professional/?ref=aymt_homepage_panel&eid=ARBB73Qg_jQJk80ChWcJSsgjzl1cAx1LM_Cp7FkW3zaJUkZKTMJKZ4KGH7fJm6MbXoVBm2lTi-zVVft8"'>Programare</div></li>
+        
+        </ul>
+    </div>
+
+<script lang="JavaScript">
+    let menuOpen = false;
+    function toggleMenu(){
+        $('#burger-menu').toggleClass('open');
+        $('#optionbar-con').toggleClass('open');
+        menuOpen = !menuOpen;
+        console.log(menuOpen);
+    }
+
+</script>
