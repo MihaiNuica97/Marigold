@@ -8,8 +8,8 @@
         align-self: center;
 }
 #content-div{
-    display: -ms-grid;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     -ms-grid-columns: 30% auto;
     grid-template-columns: 30% auto;
     margin: 50px;
@@ -19,11 +19,10 @@
 }   
 
 #photo-div{
-    /* width: 20%;
-    float: left; */
-    /* max-width: 250px; */
-    -ms-grid-column-align: end;
-        justify-self: end;
+        width: 50%;
+        /* margin-bottom: 30px; */
+        max-width: 600px;
+        margin-bottom: 50px;
 }
 
 #profile-photo{
@@ -32,17 +31,24 @@
 }
 
 #text-div{
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 10px;
-    border-left: 3px solid #520a3a;
-    /* width: 75%; */
+    width: 80%;
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
-    margin-top: auto;
-    margin-bottom: auto;
+    max-width: 1000px;
+}
+
+#text-div > p{
+    margin-top: 30px;
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color: #520a3a;
+    font-weight: bold;
+    margin-bottom: 70px;
 }
 
 #video-div{
@@ -63,7 +69,8 @@
         margin-right: 40px;
     }
     #photo-div{
-        max-width: 400px;
+        /* max-width: 400px; */
+        width: 80%;
     }
     #text-div{
         border: none;
@@ -72,7 +79,9 @@
         font-size: 1.2em;
     }
 
-
+    .title{
+        font-size: 40px;
+    }
 
 
 }
