@@ -42,3 +42,10 @@
 #main-layout{
     overflow-x: hidden;
 }
+
+#slideshow-bg{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+}

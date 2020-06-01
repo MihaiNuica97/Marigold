@@ -166,5 +166,10 @@
     }
 
 
-
+    #slideshow-bg{
+        display: none;
+    }
+    #bg-con{
+        display: none;
+    }
 }
