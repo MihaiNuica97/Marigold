@@ -29,9 +29,35 @@
                 <i class="fab fa-facebook-f social-icon"></i>
             </a>
 
-            <a href="./contact.html">
+            <a onclick="$('#contact-popup').toggleClass('open')">
                 <i class="far fa-envelope social-icon"></i>
             </a>
+            <div id="contact-popup">
+                <div id="contact-close-outer">
+                    <i class="fas fa-times"onclick="$('#contact-popup').toggleClass('open')"></i>
+                </div>
+
+                <div id="contact-form-outer">
+                    <form action="">
+                        <label for="name">Nume:</label>
+                        <input type="text" id="name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    
+                        <label for="subject">Subiect:</label>
+                        <input type="text" name="subject" id="subject">
+                        
+                        <label for="content">Mesaj:</label>
+                        <textarea name="content" id="content"></textarea>
+
+                        <div id="contact-submit-outer">
+                            <span id="contact-submit"> Trimite </span>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
         </div>
         <span>0723445054</span>
     </div>
