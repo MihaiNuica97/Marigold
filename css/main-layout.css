@@ -102,6 +102,7 @@ body{
     background-color: #520a3a;
     z-index: 5;
     padding: 10px;
+    border-radius: 20px;
     box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 #contact-close-outer{
@@ -135,7 +136,7 @@ body{
     align-self: center;
     width: 80%;
 }
-#contact-popup input{
+#contact-popup input:not(#consent-checkbox){
     /* border-radius: 10px; */
     border: none;
     background-color: #520a3a;
@@ -153,6 +154,17 @@ body{
     height: 150px;
     align-self: center;
     resize: none;
+}
+#consent {
+    width: 90%;
+    align-self: center;
+    margin-top: 15px;
+}
+#consent label{
+    font-size: small;
+}
+#consent-checkbox{
+    align-self: start;
 }
 
 #contact-submit-outer{

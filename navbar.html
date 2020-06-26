@@ -40,16 +40,22 @@
                 <div id="contact-form-outer">
                     <form action="">
                         <label for="name">Nume:</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" required>
 
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required> 
                     
                         <label for="subject">Subiect:</label>
-                        <input type="text" name="subject" id="subject">
+                        <input type="text" name="subject" id="subject" required>
                         
                         <label for="content">Mesaj:</label>
                         <textarea name="content" id="content"></textarea>
+                        
+                        <div id="consent">
+                            <input type="checkbox" name="consent" id="consent-checkbox" checked>
+                            <label for="consent">Sunt de acord sa primesc emailuri despre promotii, evenimente si noutati din cadrul salonului Marigold</label>
+    
+                        </div>
 
                         <div id="contact-submit-outer">
                             <span id="contact-submit"> Trimite </span>
