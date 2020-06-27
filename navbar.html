@@ -29,7 +29,11 @@
                 <i class="fab fa-facebook-f social-icon"></i>
             </a>
 
-            <a onclick="$('#contact-popup').toggleClass('open')">
+            <a onclick="
+                $('#contact-popup').toggleClass('open'); 
+                $('#contact-form-outer').removeClass('hidden');
+                $('#final-message').removeClass('show');
+            ">
                 <i class="far fa-envelope social-icon"></i>
             </a>
             <div id="contact-popup">
@@ -62,6 +66,10 @@
                         </div>
                     </form>
 
+                </div>
+
+                <div id="final-message">
+                    <span> Va multumim pentru ca ne-ati contactat! </span>
                 </div>
             </div>
         </div>

@@ -16,7 +16,9 @@ body{
     min-width: fit-content;
     font-size: 15px;
 }
-
+.hidden{
+    display: none !important;
+}
 #navbar-con{
     position: relative;
     height: 220px;
@@ -155,6 +157,7 @@ body{
     align-self: center;
     resize: none;
 }
+
 #consent {
     width: 90%;
     align-self: center;
@@ -188,6 +191,19 @@ body{
 #contact-submit{
     color: black;
     font-size: x-large;
+}
+
+#contact-form-outer.hidden{
+    display: none;
+}
+
+#final-message{
+    display: none;
+}
+#final-message.show{
+    display: block;
+    margin: 40px;
+    margin-top:30px;
 }
 
 /******************************************************** OPTIONS BAR ********************************************************/
