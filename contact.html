@@ -24,12 +24,42 @@
                 <div id="courses-title"><span>Contact</span></div>
 
                 <div>
-                    <p class="courses-content">
+                    <!-- <p class="courses-content">
                         0723445054
                     </p>
                     <p class="courses-content">
                         contact@salonmarigold.ro
-                    </p>
+                    </p> -->
+                    <div id="contact-big-form-outer">
+                        <form action="">
+                            <label for="name">Nume:</label>
+                            <input type="text" id="big-name" required>
+    
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="big-email" required> 
+                        
+                            <label for="subject">Subiect:</label>
+                            <input type="text" name="subject" id="big-subject" required>
+                            
+                            <label for="content">Mesaj:</label>
+                            <textarea name="content" id="big-content"></textarea>
+                            
+                            <div id="consent">
+                                <input type="checkbox" name="consent" id="big-consent-checkbox" checked>
+                                <label for="consent">Sunt de acord sa primesc emailuri despre promotii, evenimente si noutati din cadrul salonului Marigold</label>
+        
+                            </div>
+    
+                            <div id="contact-submit-outer" onclick="sendEmailForm()">
+                                <span id="contact-submit"> Trimite </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="final-big-message">
+                        <span> Va multumim pentru ca ne-ati contactat! </span>
+                    </div>
+    
                     <p class="courses-subtitle">
                         Program
                     </p>
