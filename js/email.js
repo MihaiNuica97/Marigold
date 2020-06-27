@@ -4,7 +4,7 @@ function sendEmail(){
 
     
     setTimeout(function(){
-        $('#contact-popup').toggleClass('open'); 
+        $('#contact-popup').removeClass('open'); 
     },1500);
 
     let name = $("#name").val();
