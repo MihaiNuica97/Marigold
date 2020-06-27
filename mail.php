@@ -9,9 +9,9 @@ $data = json_decode($json);
 
 
 $to = "mihainuica@gmail.com";
-$subject = $data->subject;
-$txt = "Nume: ".$data->name. "\r\n" .$data->content;
-$headers = "From: " . $data->email; 
+$subject = filter_var($data->subject, FILTER_SANITIZE_STRING);
+$txt = "Nume: ". strip_tags($data->name) . "\r\n" . strip_tags($data->content);
+$headers = "From: " . filter_var($data->email, FILTER_SANITIZE_EMAIL); 
 
 $consent = $data->subscribe;
 
