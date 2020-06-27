@@ -19,7 +19,7 @@
     margin-bottom: 70px;
 }
 
-#courses-div div:not(#courses-title){
+#courses-div div:not(#courses-title):not(#contact-big-form-outer):not(#final-big-message){
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -51,10 +51,17 @@
 }
 
 
-
+#contact-big-form-outer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
 #contact-big-form-outer form{
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-self: center;
     width: 500px;
 }
 
