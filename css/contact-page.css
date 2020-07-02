@@ -19,7 +19,14 @@
     margin-bottom: 70px;
 }
 
-#courses-div div:not(#courses-title):not(#contact-big-form-outer):not(#final-big-message){
+#top-section{
+    display: flex;
+}
+#program{
+    /* justify-self: center;
+    align-self: center; */
+}
+#courses-div div:not(.courses-footer):not(#program):not(#top-section):not(#courses-title):not(#contact-big-form-outer):not(#final-big-message){
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -27,6 +34,7 @@
 .courses-content{
     /* font-size: 20px; */
     list-style: none;
+    padding-left: 10px;
 }
 
 .courses-subtitle{
@@ -43,7 +51,7 @@
 } */
 
 .courses-footer{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #map-div{
     margin-top: 50px;
@@ -147,4 +155,11 @@
     font-size: x-large;
     font-weight: bold;
     color: #520a3a;
+}
+
+
+@media screen and (max-width: 992px){
+    #top-section{
+        flex-direction: column;
+    }
 }

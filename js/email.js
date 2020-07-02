@@ -20,10 +20,10 @@ function sendEmail(){
         subscribe: subscribe
     }
     packet = JSON.stringify(packet);
-    // console.log("sending");
-    // $.post('http://mihainuica.com/marigold/mail.php', packet,  function(response){
-    //     console.log(JSON.parse(response));
-    // });
+    console.log("sending");
+    $.post('https://salonmarigold.ro/mail.php', packet,  function(response){
+        console.log(JSON.parse(response));
+    });
 }
 
 function sendEmailForm(){
@@ -44,8 +44,8 @@ function sendEmailForm(){
         subscribe: subscribe
     }
     packet = JSON.stringify(packet);
-    // console.log(packet);
-    // $.post('http://mihainuica.com/marigold/mail.php', packet,  function(response){
-    //     console.log(JSON.parse(response));
-    // });
+    console.log(packet);
+    $.post('https://salonmarigold.ro/mail.php', packet,  function(response){
+        console.log(JSON.parse(response));
+    });
 }
