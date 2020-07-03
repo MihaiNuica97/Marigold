@@ -10,9 +10,11 @@ $data = json_decode($json);
 
 $to = "contact@salonmarigold.ro";
 // $to = "mihainuica@gmail.com";
+// $to = "salonmarigold-ro.20150623.gappssmtp.com";
+// $to = "salonmarigold@salonmarigold.ro";
 $subject = filter_var($data->subject, FILTER_SANITIZE_STRING);
-$txt = "Nume: ". strip_tags($data->name) . "\r\n" . strip_tags($data->content);
-$headers = "From: " . filter_var($data->email, FILTER_SANITIZE_EMAIL); 
+$txt = "Nume: ". strip_tags($data->name) . "\r\n" . "\r\n" . "Email: " . filter_var($data->email, FILTER_SANITIZE_EMAIL) . "\r\n" . "\r\n" . strip_tags($data->content);
+$headers = "From: " . filter_var($data->email, FILTER_SANITIZE_EMAIL) . "\r\n" . "\r\n"; 
 
 
 
