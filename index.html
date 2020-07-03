@@ -34,21 +34,19 @@
 
                 <div class="botsection-div">
                     <div class="botsection-img-div">
-                            <img src="./img/poza_servicii_homepage.jpg" class="botsection-img" alt="">
+                            <img id="fg-img-1" class="botsection-img" alt="">
                     </div>
 
-                    <div class="botsection-text-div">
-                        <p>Devino versiunea pe care iti doresti sa o vezi in oglinda. Marigold este aici ca sa iti ofere servicii de cea mai inalta calitate.</p>
+                    <div id="text-1" class="botsection-text-div">
                     </div>
                 </div>    
 
                 <div class="botsection-div">
                     <div class="botsection-img-div second">
-                            <img src="./img/produse_homepage.jpg" class="botsection-img second" alt="">
+                            <img id="fg-img-2" class="botsection-img second" alt="">
                     </div>
 
-                    <div class="botsection-text-div second">
-                        <p>La Marigold se folosec doar produsele unor branduri de top care satisfac asteptarile clientilor</p>
+                    <div id="text-2" class="botsection-text-div second">
                     </div>
                 </div>
             </div>
@@ -60,10 +58,10 @@
 
                 <div id="bg-img-con">
                     <div class="bg-img" id="img1">
-                        <img src="./img/background servicii.jpg">
+                        <img id="bg-img-1">
                     </div>
                     <div class="bg-img" id="img2">
-                        <img src="./img/homepage-background-2.jpg">
+                        <img id="bg-img-2">
                     </div>
                 </div>
             </div>
@@ -74,5 +72,14 @@
         <script src="./js/getLayout.js"></script>
         <script src="./js/getSlideshowImages.js"></script>
         <script src="./js/slideshow.js" defer></script>
+        <script src="./content/homepage.js"></script>
+        <script>
+            $("#fg-img-1").attr("src",homepage.img.fata.stanga);
+            $("#fg-img-2").attr("src",homepage.img.fata.dreapta);
+            $("#bg-img-1").attr("src",homepage.img.spate.stanga);
+            $("#bg-img-2").attr("src",homepage.img.spate.dreapta);
+            $("#text-1").append($("<p>" + homepage.text.stanga + "</p>"));
+            $("#text-2").append($("<p>" + homepage.text.dreapta + "</p>"));
+        </script>
     </body>
 </html>
