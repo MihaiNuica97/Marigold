@@ -36,16 +36,12 @@
                             <p class="courses-subtitle">
                                 Program
                             </p>
-                            <ul class="courses-content">
-                                <li>Luni-Vineri: 9:00-11:00 14:00-19:00</li>
-                                <li>Sambata: 10:00-14:00</li>
-                                <li>Duminica: Inchis</li>
+                            <ul id="program-list" class="courses-content">
                             </ul>
                             <div class="courses-footer">
                                 <p>*Programul este flexibil pentru evenimente si poate fi discutat telefonic.</p>
                             </div>
-                            <p class="courses-subtitle">
-                                Tel: 0723445054
+                            <p id="contact-tel" class="courses-subtitle">
                             </p>
                         </div>
 
@@ -91,7 +87,20 @@
         </div>
         
         <div id="footer-outer-div"></div>
-
+        
         <script src="./js/getLayout.js"></script>
+        <!-- <script src="./content/contact.js"></script> -->
+        <script>
+            $( document ).ready(function() {
+                div  = $("#program-list");
+
+                for(let line in contact.program){
+                    let pLine = $("<li>" + contact.program[line] + "</li>");
+                    div.append(pLine);
+                }
+                $("#contact-tel").text("Tel: " + contact.tel);
+            });
+            
+        </script>
     </body>
 </html>
