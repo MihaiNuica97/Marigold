@@ -11,6 +11,6 @@ const homepage = {
     },
     text:{
         stanga:"Devino versiunea pe care iti doresti sa o vezi in oglinda. Marigold este aici ca sa iti ofere servicii de cea mai inalta calitate.",
-        dreapta:"La Marigold se folosec doar produsele unor branduri de top care satisfac asteptarile clientilor"
+        dreapta:"La Marigold se folosec doar produsele unor branduri de top care satisfac asteptarile clientilor."
     }
 };
